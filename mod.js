@@ -1,7 +1,7 @@
-import buildURL from 'axios/unsafe/helpers/buildURL.js';
-import buildFullPath from 'axios/unsafe/core/buildFullPath.js';
-import AxiosError from 'axios/unsafe/core/AxiosError.js';
-import settle from 'axios/unsafe/core/settle.js';
+import buildURL from 'axios/lib/helpers/buildURL.js';
+import buildFullPath from 'axios/lib/core/buildFullPath.js';
+import AxiosError from 'axios/lib/core/AxiosError.js';
+import settle from 'axios/lib/core/settle.js';
 
 export default ({
     EventSource = typeof window === 'undefined' ? undefined : window.EventSource,
