@@ -1,6 +1,6 @@
 {
   "name": "axios-sse-adapter",
-  "version": "0.1.0-dev.0",
+  "version": "0.1.0",
   "main": "mod.js",
   "repository": "https://git.kaki87.net/KaKi87/axios-sse-adapter.git",
   "author": "KaKi87 <KaKi87@proton.me>",
