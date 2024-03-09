@@ -5,11 +5,12 @@ import settle from 'axios/lib/core/settle.js';
 
 export default ({
     EventSource = typeof window === 'undefined' ? undefined : window.EventSource,
+    options,
     onMessage
 }) => config => new Promise((resolve, reject) => {
     const
         url = buildURL(buildFullPath(config.baseURL, config.url), config.params, config.paramsSerializer),
-        eventSource = new EventSource(url);
+        eventSource = new EventSource(url, options);
     eventSource.addEventListener(
         'error',
         error => {
